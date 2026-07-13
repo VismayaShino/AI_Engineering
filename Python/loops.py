@@ -72,7 +72,7 @@ for letter in str:
 else:
     print("end")"""
 
-tup =(1,4,9,16,25,36,49,64,81,100)
+"""tup =(1,4,9,16,25,36,49,64,81,100)
 x = int(input("enter the value:"))
 for val in tup:
     if (val == x):
@@ -80,8 +80,36 @@ for val in tup:
         break
 else:
     print("end")
+"""
 
+"""
+#sum of first n numbers
+n = int(input("Enter the end value: "))
+i=0
+sum =0
+while(i<=n):
+    sum =sum + i
+    i=i+1
     
+print(sum)
+"""
+
+#Factorial
+n = int(input("Enter the number: "))
+i = 1
+fact = 1
+"""while(i<=n):
+    fact = fact*i
+    i = i+1
+print("Factorial of " + str(n) + " is",fact)"""
+
+"""for i in range(1,n+1):
+    fact = fact*i
+    i = i+1
+print("Factorial of " + str(n) + " is",fact)"""
+
+
+
 
 
 
