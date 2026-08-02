@@ -61,11 +61,31 @@ output = factorial(n)
 
 ------------------------------------------------------------"""
 
-"""Recursion"""
+"""Recursion
 def recursion(n):
     if(n==0 or n==1):
         return 1
     else:
         return recursion(n-1) * n
-
 print(recursion(5))
+
+------------------------------------------------------------"""
+
+"""Sum of first n natural numbers
+def summation(n):
+    if(n==0):
+        return 0
+    else:
+        return n + summation (n-1)
+print(summation(10))
+
+------------------------------------------------------------"""
+
+"""Print all elememnts in a list"""
+def print_list(list):
+    if((len(list)) == 0):
+        return 0
+    else:
+        return list
+print(print_list([1,2,3,4,5]))
+
