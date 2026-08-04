@@ -13,7 +13,6 @@ while (secret_number != value):
         value = int(input("Enter your guess: "))
         count = count +1
    
-print("Congatulations "+ string +"! You made it")
-print("Woohooo! You solved it in "+ str(count) +" attempts")
-
+print("Congratulations "+ string)
+print("Woohoo! You solved it in "+ str(count) +" attempts")
 
