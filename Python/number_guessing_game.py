@@ -5,14 +5,18 @@ value = int(input("Enter your guess: "))
 count = 1
 while (secret_number != value):
     if(value > secret_number):
-        print("Uff!! Too high")
+        print("Uff! Too high")
         value = int(input("Enter your guess: "))
         count = count+1
     elif(value < secret_number):
-        print("Ooops!! Too low")
+        print("Oopss! Too Low")
         value = int(input("Enter your guess: "))
         count = count +1
    
 print("Congratulations "+ string)
 print("Woohoo! You solved it in "+ str(count) +" attempts")
+
+
+
+
 
