@@ -55,6 +55,8 @@ class Circle:
 c1 = Circle(10)
 c1.area()
 
+#------------------------------------------------------------------------------------------
+
 class Employee:
     def __init__(self,role,department,salary):
         self.role = role
@@ -77,6 +79,22 @@ class Engineer(Employee):
 
 e1 = Engineer("Vis",25)
 e1.showdetails()
+
+#------------------------------------------------------------------------------------------
+class Order:
+    def __init__(self,item,price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, ord2):
+        return self.price > ord2.price
+
+ord1 = Order("chips",20)
+ord2 = Order("tea",10)
+
+print(ord1 > ord2)
+
+
 
 
 
