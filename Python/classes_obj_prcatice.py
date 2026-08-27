@@ -44,6 +44,41 @@ a1.credit()
 """
 #------------------------------------------------------------------------------------------
 
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        self.answer = self.radius * self.radius * 3.14 
+        print("The area of the circle is: ",self.answer,"m^2")
+
+c1 = Circle(10)
+c1.area()
+
+class Employee:
+    def __init__(self,role,department,salary):
+        self.role = role
+        self.department = department
+        self.salary = salary
+
+    def showdetails(self):
+        print("Your role is: ",self.role)
+        print("Your department is: ",self.department)
+        print("Your salary is: ",self.salary)
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print("Your name is: ",self.name)
+        print("Your age is: ",self.age)
+        super().__init__("Cloud Engineer", "Cloud",50000)
+
+
+e1 = Engineer("Vis",25)
+e1.showdetails()
+
+
 
 
 
